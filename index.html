@@ -50,13 +50,29 @@
             }
         </style>
 
+        <script>
+            function english() {
+                document.getElementById("en").style.display = "block";
+                document.getElementById("ru").style.display = "none";
+                document.getElementById("divButton").style.display = "none"
+            }
+            function russian() {
+                document.getElementById('en').style.display = "none";
+                document.getElementById('ru').style.display = "block";
+                document.getElementById("divButton").style.display = "none"
+            }
+        </script>
+
     </head>
 
     <body>
-
-    <div style="width: 85%; margin-left: 5%; margin-right: 5%; margin-top: 2%;  font-family: 'Calibri'; ">
+        <div id="divButton" style="margin-left: 43%; margin-top: 10%;">
+            <button class="btn btn-outline-secondary" type="button" onclick="english()">English</button>
+            <button class="btn btn-outline-secondary" type="button" onclick="russian()">Русский</button>
+        </div>
         
-        <!-- border:1px solid black; -->
+
+    <div id="en" style="display:none; width: 85%; margin-left: 5%; margin-right: 5%; margin-top: 2%;  font-family: 'Calibri';">
         <div style="float:left; width: 25%;" >
             <img src="static/image/foto.jpg" alt="foto" width="80%" height="80%">
             <p style="margin-top: 20%;">Antalya, Turkey<br>
@@ -80,12 +96,11 @@
                 <img src="static/image/qr_code_0.jpg" alt="qr code" width="50%" style="margin-top: 15%; margin-left: 0%">
             </div> 
         </div>
-<!--padding-left:10px; border:1px solid black; -->
         <div style="float:right; width: 75%; border-left:1px solid rgb(0, 0, 0); margin-top: 1%; margin-bottom: 1%;">
             <div style="text-align:left; margin-left: 5%;">
                 <h3><b>Karen Avasapyants</b></h3>
                 <h4><b>Python Backend Developer</b></h4><br>
-                <h4><b>Experience and projects</b></h4>
+                <h4><b>Experience</b></h4>
                 <table>
                     <tbody>
                         <tr class="ex">
@@ -96,7 +111,7 @@
                                 Company website with information about the services provided, clients and the opportunity to read some documents.<br>
                                 HTML, CSS, Bootstrap, GIT.<br></p>
                                 <p><a href="https://github.com/karen-av/sti" target="_blank">STI-partners LLC.</a> 2022.<br>
-                                Development of a web application to analyze the level of training of employees for further training.<br> 
+                                Development of a web application to rank employee competencies for further training.<br> 
                                 Python, Flask, PostgreSQL, Pandas , Heroku, Git, CSS, HTML, Bootstrap, JavaScript.<br></p>
                                 <p><a href="https://github.com/karen-av/sti_sales" target="_blank">STI-partners LLC.</a> 2022.<br>
                                 Development of a web application to analyze the level of training of employees for further training.<br> 
@@ -143,6 +158,98 @@
                 <table>
                     <tr>
                         <td class="left" style="margin-top: 0%; margin-bottom: 0%;"><h6>I spend my free time in the workshop and make something with my hands, play Football &  table tennis.</h6></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="ru" style=" display:none; width: 85%; margin-left: 5%; margin-right: 5%; margin-top: 2%;  font-family: 'Calibri'; ">
+        <div style="float:left; width: 25%;" >
+            <img src="static/image/foto.jpg" alt="foto" width="80%" height="80%">
+            <p style="margin-top: 20%;">Анталья, Турция<br>
+                Полный день<br>Удаленно</p>
+            <div style="margin-top: 10%; text-align: justify;">
+                <a href="mailto:ka.spk27@gmail.com">Email</a><br>
+                <a href="https://t.me/karen_av" target="_blank">Telegram</a><br>
+                <a href="https://github.com/karen-av" target="_blank">GitHub</a><br>
+                <a href="https://www.linkedin.com/in/karen-av/" target="_blank">LinkedIn</a><br>
+                <a href="https://karen-av.github.io/ka_web/" target="_blank">Web</a>
+            </div> 
+            <div  style="margin-top: 10%;"><b>Навыки</b><br></div> 
+            <table  style="width: 70%; text-align: justify;">
+                <body>
+                    <tr>
+                        <td>Python, Flask, Django, SQL, PostgreSQL, MySQL, SQLAlchemy, Pandas, Git, Docker, CSS, HTML, Bootstrap, JavaScript, Telegram Bot API, Heroku, C, Excel, Word.
+                    </tr>
+                </body>
+            </table>
+            <div>
+                <img src="static/image/qr_code_0.jpg" alt="qr code" width="50%" style="margin-top: 15%; margin-left: 0%">
+            </div> 
+        </div>
+        <div style="float:right; width: 75%; border-left:1px solid rgb(0, 0, 0); margin-top: 1%; margin-bottom: 1%;">
+            <div style="text-align:left; margin-left: 5%;">
+                <h3><b>Karen Avasapyants</b></h3>
+                <h4><b>Python Backend Developer</b></h4><br>
+                <h4><b>Опыт работы</b></h4>
+                <table>
+                    <tbody>
+                        <tr class="ex">
+                            <td class="left"><h6>2022 – н.в..</h6></td>
+                            <td class="rigth">
+                                <h6><b>Freelancer. Python Developer</b></h6>
+                                <p><a href="https://github.com/karen-av/okko" target="_blank">ООО "Автотранс ОККО".</a> 2022.<br>
+                                    Веб-сайт компании с информацией о предоставляемых услугах, клиентах и возможностью ознакомиться с некоторыми документами.<br>
+                                HTML, CSS, Bootstrap, GIT.<br></p>
+                                <p><a href="https://github.com/karen-av/sti" target="_blank">«ЭС-ТИ-АЙ» ООО.</a> 2022.<br>
+                                Разработка веб-приложения для анализа уровня подготовки сотрудников c целью дальнейшего обучения.<br> 
+                                Python, Flask, PostgreSQL, Pandas , Heroku, Git, CSS, HTML, Bootstrap, JavaScript.<br></p>
+                                <p><a href="https://github.com/karen-av/sti_sales" target="_blank">«ЭС-ТИ-АЙ» ООО.</a> 2022.<br>
+                                Разработка веб-приложения для ранжирования компетенций сотрудников с целью дальнейшего обучения.<br> 
+                                Python, Flask, PostgreSQL, Pandas , Heroku, Git, CSS, HTML, Bootstrap, JavaScript.</p>
+                            </td>
+                        </tr>
+                        <tr class="ex">
+                            <td class="left"><h6>2012 – 2021</h6></td>
+                            <td class="rigth">
+                                <h6 style="margin-bottom: 0;"><b><a href="https://a-okko.ru" target="_blank">«Автотранс ОККО» ООО</a></b></h6>
+                                <h6><b>Коммерческий директор. (10 человек)</b></h6>
+                                <p>Ведение ключевых клиентов. Управление работой отделов продаж, логистики и бухгалтерии. Контроль работы транспортного отдела. Ведение управленческой отчетности. Организация закупок и продаж оборудования для логистических услуг.<br> 
+                                Microsoft Excel, Microsoft  Word, 1C, Trans-manager.</p>
+                                </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4><b>Образование и курсы</b></h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="left"><h6>2021 – 2022</h6></td>
+                            <td class="rigth">
+                                <h6>GARVARD UNIVERSITY. CS50. Online.</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left" ><h6>2002 – 2007</h6></td>
+                            <td class="rigth">
+                                <h6>РГУНГ им. И.М. Губкина. Инженер.</h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4><b>Языки</b></h4>
+                <table>
+                    <tr>
+                        <td class="left" style="margin-top: 0%; margin-bottom: 0%;"><h6>Russian – родной.<br>English – В1 (Intermediate).</h6></td>
+                    </tr>
+                </table>
+                
+                <h4><b>Обо мне</b></h4>
+                <table>
+                    <tr>
+                        <td class="left" style="margin-top: 0%; margin-bottom: 0%;"><h6>Свободное время провожу в мастерской, делаю что-то своими руками, играю в футбол и настольный теннис.</h6></td>
                     </tr>
                 </table>
             </div>
